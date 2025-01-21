@@ -3,7 +3,7 @@ const { Connection, PublicKey } = require("@solana/web3.js");
 require("dotenv").config(); // Load environment variables from .env file
 
 // Avoid using solana's own RPC nodes for this task as they are heavily rate-limited
-const connection = new Connection(process.env.API_KEY, "confirmed");
+const connection = new Connection(process.env.SOLANA_RPC_URL, "confirmed");
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
