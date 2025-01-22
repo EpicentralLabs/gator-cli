@@ -45,8 +45,8 @@ node gator-cli <file-path> <depth> <delay>
 
 ### Parameters
 
-1. `<file-path>`: Path to the file containing wallet addresses (one wallet address per line).  
-2. `<depth>`: The maximum number of transactions to fetch for each wallet.  
+1. `<file-path>`: Path to the file containing wallet addresses (one wallet address per line).
+2. `<depth>`: The maximum number of transactions to fetch for each wallet.
 3. `<delay>`: The delay (in milliseconds) between fetching transactions for each wallet to avoid rate limiting.
 
 ### Example Command
@@ -56,6 +56,7 @@ node gator-cli wallets.txt 100 2000
 ```
 
 This will:
+
 - Read wallet addresses from `wallets.txt`.
 - Fetch up to 100 transactions per wallet.
 - Introduce a 2000ms (2-second) delay between fetching data for each wallet.
@@ -84,6 +85,7 @@ The tool displays transaction details in the following format:
 ## What is Delay?
 
 - **Delay** introduces a pause between API calls for each wallet. This helps in:
+
   - Avoiding rate-limiting issues with the RPC provider.
   - Ensuring compliance with provider API usage terms.
 
